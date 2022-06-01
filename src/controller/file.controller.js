@@ -16,7 +16,6 @@ const upload = async (req, res) => {
       .then(async (res) => {
         await new Promise((resolve, reject) => setTimeout(resolve, 5000));
 
-        console.log(res);
         data = res;
       })
       .then(() => {
